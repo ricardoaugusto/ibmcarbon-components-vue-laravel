@@ -1,0 +1,36 @@
+@import 'carbon-utils';
+
+.text {
+    p {
+        @include carbon--type-style("body-long-02");
+        margin-bottom: $spacing-04;
+
+        &:last-child {
+            margin-bottom: $spacing-08;
+        }
+    }
+
+    ul,
+    ol {
+        margin-bottom: $spacing-08;
+    }
+
+    ul li {
+        list-style-type: none;
+        text-indent: -5px;
+
+        &:before {
+            position: relative;
+            left: -$spacing-04;
+            content: "·";
+        }
+    }
+
+    ol li {
+        list-style-type: decimal;
+    }
+
+    li {
+        margin-bottom: $spacing-02;
+    }
+}

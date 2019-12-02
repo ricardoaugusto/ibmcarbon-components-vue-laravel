@@ -1,0 +1,16 @@
+main {
+    .title {
+        @include carbon--type-style("expressive-heading-06");
+        margin-bottom: $spacing-08;
+    }
+
+    .heading {
+        @include carbon--type-style("expressive-heading-04");
+        margin-bottom: $spacing-01;
+    }
+
+    .subheading {
+        @include carbon--type-style("expressive-heading-03");
+        margin-bottom: $spacing-02;
+    }
+}
